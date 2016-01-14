@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1452176064 source:c:\nosaved\personnel\c++projects\firststep\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1452695773 source:c:\nosaved\personnel\c++projects\tpmotmystere\main.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+
