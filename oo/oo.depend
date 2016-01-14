@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1452701516 source:c:\nosaved\personnel\c++projects\oo\arme.cpp
+	"Arme.h"
+
+1452701490 c:\nosaved\personnel\c++projects\oo\arme.h
+	<iostream>
+	<string>
+
+1452701783 source:c:\nosaved\personnel\c++projects\oo\main.cpp
+	<iostream>
+	<string>
+	"Personnage.h"
+
+1452701612 c:\nosaved\personnel\c++projects\oo\personnage.h
+	<iostream>
+	<string>
+	"Arme.h"
+
+1452701827 source:c:\nosaved\personnel\c++projects\oo\personnage.cpp
+	"Personnage.h"
+
