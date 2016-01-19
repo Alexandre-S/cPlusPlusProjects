@@ -1,10 +1,38 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <ctime>
 #include <cstdlib>
+#include <vector>
 
 using namespace std;
 
+/* Fonction choisirMot, pas de paramètre d'entrée. Retourne un mot du dico */
+string choisirMot(){
+    ifstream fichier("C:/NoSaved/PERSONNEL/sdf.txt");
+    int nbLignes(0);
+    vector<string> tabFichier;
+    string ligne;
+    int nbRandom(0);
+    if(fichier)
+    {
+        while(getline(fichier, ligne)){
+            nbLignes++;
+            tabFichier.push_back(ligne);
+        }
+        nbRandom = rand() % nbLignes;
+        return tabFichier[nbRandom];
+        /*while(getline(fichier, ligne)){
+            cout << ligne << endl;
+        }*/
+    }
+    else
+    {
+        cout << "ERREUR: Impossible d'ouvrir le fichier en lecture." << endl;
+    }
+}
+
+/* Fonction melangerLettre, paramètre d'entrée : le mot choisi. Retourne le mot mélangé */
 string melangerLettre(string mot){
     string res("");
     int position(0);
@@ -21,13 +49,13 @@ int main()
     srand(time(0));
     bool jouer(true);
     do{
-        cout << "Saisissez un mot ! : " ;
+
+        //cout << "Saisissez un mot ! : " ;
         string motMystere;
-        cin >> motMystere;
+        //cin >> motMystere;
+        motMystere = choisirMot();
         int nbVie(5);
-
         string motMelanger;
-
         motMelanger = melangerLettre(motMystere);
 
         string motSaisi("");

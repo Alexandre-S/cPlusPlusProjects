@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    Personnage david, goliath("Epée en pierre", 20);
+    Personnage david("David", "Epée en os", 10), goliath("Goliath", "Epée en pierre", 20);
     Personnage bob(goliath);
 
     goliath.attaquer(david);    //goliath attaque david

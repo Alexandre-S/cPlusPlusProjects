@@ -10,7 +10,7 @@ class Personnage
     public:
 
     Personnage(); // Constructeur
-    Personnage(std::string nomArme, int degatsArme); //Constructeur surchargé
+    Personnage(std::string m_nom, std::string nomArme, int degatsArme); //Constructeur surchargé
     ~Personnage(); //Destructeur
     void recevoirDegats(int nbDegats);
     void attaquer(Personnage &cible);
@@ -23,6 +23,7 @@ class Personnage
 
     int m_vie;
     int m_mana;
+    std::string m_nom;
     Arme m_arme;
 };
 
